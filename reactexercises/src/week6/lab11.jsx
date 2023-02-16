@@ -33,6 +33,7 @@ const Lab11 = () => {
         <div style={{ display: "flex", gap: 5 }}>
           <TextField
             onChange={(e) => setWord(e.target.value)}
+            placeholder="Add Word"
             id="outlined-basic"
             label="Word"
             value={word}
@@ -43,6 +44,7 @@ const Lab11 = () => {
               setMessage(message + " " + word);
               setWord("");
             }}
+            data-testid="addbutton"
             variant="contained"
           >
             Submit
