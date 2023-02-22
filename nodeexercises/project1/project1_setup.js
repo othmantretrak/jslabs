@@ -7,7 +7,7 @@ const loadAlerts = async () => {
   let results = "";
   // clean out collection before adding new countries
   let alerts = await dbRtns.deleteAll(db, ALERTCOLLECTION);
-  results += `deleted ${alerts.deletedCount} documents from ${ALERTCOLLECTION} collection`;
+  results += `deleted ${alerts.deletedCount} documents from ${ALERTCOLLECTION} collection.`;
 
   const alertJson = await getJSONFromWWWPromise(GOCALERTS);
   results += "Retrieved Alert JSON from remote web site.";
