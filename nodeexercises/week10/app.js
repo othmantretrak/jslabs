@@ -21,7 +21,7 @@ const streetLights = [
 
 // Socket.io server
 const io = new Server(httpServer, {});
-// main socket routine
+// main sockettest  routine
 io.on("connection", (socket) => {
   console.log("new connection established");
   // client has joined
